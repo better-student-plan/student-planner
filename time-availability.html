@@ -16,47 +16,53 @@
     <h3>When can you take classes?</h3>
     <form id="suggestionsForm" action="suggestions.html" method="GET">
       <div id="times-container">
-        <div id="time-selector" class="form-group">
-          <select name="dayoftheweek" id="dayoftheweek" form="suggestionsForm">
-            <option value="M">Monday</option>
-            <option value="T">Tuesday</option>
-            <option value="W">Wednesday</option>
-            <option value="R">Thursday</option>
-            <option value="F">Friday</option>
-            <option value="S">Saturday</option>
-          </select>
+        <div id="time-selector" class="form-group form-row">
+          <div class="col">
+              <select name="dayoftheweek" id="dayoftheweek" form="suggestionsForm" class="form-control">
+                  <option value="M">Monday</option>
+                  <option value="T">Tuesday</option>
+                  <option value="W">Wednesday</option>
+                  <option value="R">Thursday</option>
+                  <option value="F">Friday</option>
+                  <option value="S">Saturday</option>
+                </select>
+          </div>
           <span>From</span>
-          <select name="startTime" id="startTime" name="startTime" form="suggestionsForm">
-            <option value="8">8 am</option>
-            <option value="9">9 am</option>
-            <option value="10">10 am</option>
-            <option value="11">11 am</option>
-            <option value="12">12 pm</option>
-            <option value="13">1 pm</option>
-            <option value="14">2 pm</option>
-            <option value="15">3 pm</option>
-            <option value="16">4 pm</option>
-            <option value="17">5 pm</option>
-            <option value="18">6 pm</option>
-            <option value="18">7 pm</option>
-            <option value="20">8 pm</option>
-          </select>
+          <div class="col">
+              <select name="startTime" id="startTime" name="startTime" form="suggestionsForm" class="form-control">
+                  <option value="8">8 am</option>
+                  <option value="9">9 am</option>
+                  <option value="10">10 am</option>
+                  <option value="11">11 am</option>
+                  <option value="12">12 pm</option>
+                  <option value="13">1 pm</option>
+                  <option value="14">2 pm</option>
+                  <option value="15">3 pm</option>
+                  <option value="16">4 pm</option>
+                  <option value="17">5 pm</option>
+                  <option value="18">6 pm</option>
+                  <option value="18">7 pm</option>
+                  <option value="20">8 pm</option>
+                </select>
+          </div>
           <span>To</span>
-          <select name="endTime" id="endTime" name="endTime" form="suggestionsForm">
-            <option value="9">9 am</option>
-            <option value="10">10 am</option>
-            <option value="11">11 am</option>
-            <option value="12">12 pm</option>
-            <option value="13">1 pm</option>
-            <option value="14">2 pm</option>
-            <option value="15">3 pm</option>
-            <option value="16">4 pm</option>
-            <option value="17">5 pm</option>
-            <option value="18">6 pm</option>
-            <option value="18">7 pm</option>
-            <option value="20">8 pm</option>
-            <option value="21">9 pm</option>
-          </select>
+          <div class="col">
+              <select name="endTime" id="endTime" name="endTime" form="suggestionsForm" class="form-control">
+                  <option value="9">9 am</option>
+                  <option value="10">10 am</option>
+                  <option value="11">11 am</option>
+                  <option value="12">12 pm</option>
+                  <option value="13">1 pm</option>
+                  <option value="14">2 pm</option>
+                  <option value="15">3 pm</option>
+                  <option value="16">4 pm</option>
+                  <option value="17">5 pm</option>
+                  <option value="18">6 pm</option>
+                  <option value="18">7 pm</option>
+                  <option value="20">8 pm</option>
+                  <option value="21">9 pm</option>
+                </select>
+          </div>
         </div>
       </div>
       <a id="add-time-entry" class="btn btn-primary" href='#'>Add another time</a>
