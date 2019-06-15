@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 </head>
 
-<body onload="renderGraph()">
+<body>
     <nav class="navbar">
     </nav>
     <div class="container">
@@ -26,6 +26,7 @@
                     <th scope="col">Days/Time</th>
                     <th scope="col">Credits</th>
                     <th scope="col">Professors</th>
+                    <th scope="col">Sub Academic Period</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,6 +37,7 @@
                     <td>3</td>
                     <td><a href="https://www.coursicle.com/ivytechindianapolis/professors/Dennis+McCrory/">McCrory,
                             Dennis William</a></td>
+                    <td>Standard Term</td>
                 </tr>
                 <tr>
                     <td>ACCT 122 - Accounting Systems Appl</td>
@@ -44,6 +46,7 @@
                     <td>3</td>
                     <td><a href="https://www.coursicle.com/ivytechindianapolis/professors/Demelece+Johnson/">Johnson,
                             Demelece</a></td>
+                    <td>Standard Term</td>
                 </tr>
                 <tr>
                     <td>BOAT 218 - Microsoft Excel</td>
@@ -52,6 +55,7 @@
                     <td>3</td>
                     <td><a href="https://www.coursicle.com/ivytechindianapolis/professors/Debra+Leverette/">Leverette,
                             Debra</a></td>
+                    <td>Standard Term</td>
                 </tr>
                 <tr>
                     <td>HUMA 100 - Theatre Appreciation</td>
@@ -59,6 +63,7 @@
                     <td>M 5:30pm-8:20pm</td>
                     <td>3</td>
                     <td>TBD</td>
+                    <td>Standard Term</td>
                 </tr>
                 <tr>
                     <td>MATH 080 - Mathematical Principles</td>
@@ -66,50 +71,10 @@
                     <td>MW 10:00am-11:20am</td>
                     <td>3</td>
                     <td><a href="https://www.coursicle.com/ivytechindianapolis/professors/Marcia+Brown/">Brown, Marcia L</a></td>
+                    <td>Standard Term</td>
                 </tr>
             </tbody>
         </table>
-        <div class="container">
-            <canvas id="myChart"></canvas>
-        </div>
-        <script>
-            function renderChart(data, labels) {
-                var ctx = document.getElementById("myChart").getContext('2d');
-                var myChart = new Chart(ctx, {
-                    type: 'horizontalBar',
-                    data: {
-                        labels: labels,
-                        datasets: [{
-                            label: 'This week',
-                            data: data,
-                            backgroundColor:[
-                                '#007bff',
-                                '#007bff',
-                                '#007bff',
-                                '#007bff',
-                                '#007bff'
-                            ]
-                        }]
-                    },
-                    options:{
-                        scales:{
-                            xAxes: [{
-                                ticks: {
-                                    max:16,
-                                    min: 0
-                                }
-                            }]
-                        }
-                    }
-                });
-            }
-
-            function renderGraph() {
-                data = [16, 16, 16, 16, 16];
-                labels =  ["ACCT102", "ACCT122", "BOAT218", "HUMA100", "MATH080"];
-                renderChart(data, labels);
-            }
-        </script>
     </div>
 
 </body>
