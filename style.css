@@ -184,3 +184,16 @@ p {
         stroke-dashoffset: -5rem;
     }
 }
+.star_done{
+    color: #ffc425;
+}
+.star_notDone{
+    color: #726d61;
+}
+.container__sem3 h3,
+.container__sem4 h3,
+.container__sem3 div,
+.container__sem4 div{
+    color: #726d61;
+    background-color: #a49e93;
+}
