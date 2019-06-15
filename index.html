@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Better Student Plan</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
@@ -15,32 +16,27 @@
   </nav>
   <div class="container text-center">
     <h1>Welcome, Brian John</h1>
-    <div class="row">
-      <div class="col">
-        <div class="card" style="border: none;">
-          <div class="card-content">
-            <p>Year: Freshman</p>
-            <p>Major: Accounting</p>
-          </div>
+    <h4>Current year progress:</h4>
+    <div>You must complete 30 credits within a year to maintain your grants.</div>
+    <div class="circle-wrap">
+      <div class="circle">
+
+        <div class="mask full">
+          <div class="fill"></div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card" style="border: none;">
-          <div class="card-content">
-            <p>Birth date: June 15, 1999<p>
-                <p>Graduation date: May 2020</p>
-          </div>
+
+        <div class="mask half">
+          <div class="fill"></div>
         </div>
+
+        <div class="inside-circle">
+          16/30
+        </div>
+
       </div>
     </div>
+    <div>You must complete 30 credits within a year to maintain your grants.</div>
     <br>
-    <h4>Current curriculum progress:</h4>
-    <div class="progress">
-      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
-        aria-valuemax="100">
-        25%
-      </div>
-    </div>
     <hr>
     <div class="row">
       <div class="col-sm-12">
@@ -59,7 +55,9 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Search for classes based on your availability</h5>
-            <p class="card-text">What days of the week can you take classes?  We can help your find classes that fit your life.</p>
+            <p class="card-text">What days of the week can you take classes? We can help your find classes that fit
+              your
+              life.</p>
             <a href="time-availability.html" class="btn btn-primary">Set Availability</a>
           </div>
         </div>
