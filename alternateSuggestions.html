@@ -8,9 +8,10 @@
     <title>Your Suggestions</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 </head>
 
-<body>
+<body onload="renderGraph()">
     <nav class="navbar">
     </nav>
     <div class="container">
@@ -53,12 +54,11 @@
                             Debra</a></td>
                 </tr>
                 <tr>
-                    <td>ACCT 205 - Income Tax</td>
+                    <td>HUMA 100 - Theatre Appreciation</td>
                     <td>Lawrence</td>
-                    <td>M 9:30am-12:20pm</td>
+                    <td>M 5:30pm-8:20pm</td>
                     <td>3</td>
-                    <td><a href="https://www.coursicle.com/ivytechindianapolis/professors/Dennis+McCrory/">McCrory,
-                            Dennis William</a></td>
+                    <td>TBD</td>
                 </tr>
                 <tr>
                     <td>MATH 080 - Mathematical Principles</td>
@@ -69,6 +69,47 @@
                 </tr>
             </tbody>
         </table>
+        <div class="container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <script>
+            function renderChart(data, labels) {
+                var ctx = document.getElementById("myChart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'horizontalBar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'This week',
+                            data: data,
+                            backgroundColor:[
+                                '#007bff',
+                                '#007bff',
+                                '#007bff',
+                                '#007bff',
+                                '#007bff'
+                            ]
+                        }]
+                    },
+                    options:{
+                        scales:{
+                            xAxes: [{
+                                ticks: {
+                                    max:16,
+                                    min: 0
+                                }
+                            }]
+                        }
+                    }
+                });
+            }
+
+            function renderGraph() {
+                data = [16, 16, 16, 16, 16];
+                labels =  ["ACCT102", "ACCT122", "BOAT218", "HUMA100", "MATH080"];
+                renderChart(data, labels);
+            }
+        </script>
     </div>
 
 </body>
